@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+*{margin: 0 auto; padding: 0;}
+ul, li {margin: 0; padding: 0; list-style: none;}
+#wrap {width: 100%; margin:0 auto;}
+
+#wrap header {width: 1200px; height: 100px; position: relative;}
+#wrap header .logo {width: 300px; height: 100px; float: left; background: #000; color: #fff;}
+
+
+
+
+/* menu */
+#wrap header .menu{width: 900px;height: 100px;
+    float: left; }
+#wrap header .menu nav {
+    width: 800px; height: 50px;
+    background: #333;
+    position: absolute; right:0; top:25px;
+    z-index:99999;
+}
+/* 대메뉴 + 소메뉴 배경색 */
+#wrap header .menu nav li {background: #333}
+/* 대메뉴 */
+#wrap header .menu nav>ul>li {
+    float: left;
+    width: 25%;
+    text-align:center;
+    height: 50px; 
+    line-height: 50px;
+}
+nav>ul>li:hover ul {height: auto;}
+nav a {color:#fff; display: block; 
+font-size:15px;} 
+nav>ul>li a:hover {background:#666;}
+nav>ul>li>ul {width: 200px; height: 0; 
+overflow:hidden;}
+
+
+
+
+
+
+#wrap .slider{width: 1200px; height: 300px;
+    background: #fff; position: relative; overflow: hidden;
+}
+#wrap .slider>div {position: absolute; top: 0; left: 0;}
+#wrap .slider .sliderList img{display: block;}
+
+#wrap .con {position: relative;
+    width: 1200px; height: 200px;
+}
+#wrap .con .con1{width: 400px; height: 200px; float: left; background: #ddd;}
+#wrap .con .con1 ul{margin: 10px 10px 0 10px;}
+#wrap .con .con1 ul li{height: 28px; line-height: 28px;
+border-bottom: 1px dashed #666;}
+#wrap .con .con1 ul li a{color: #000;}
+#wrap .con .con1 ul li span{float: right; color: #000; font-size: 13px;}
+
+
+#wrap .con .con2{width: 400px; height: 200px; float: left; background: #333; color: #fff;}
+#wrap .con .con3{width: 400px; height: 200px; float: left; background: #ddd;}
+
+#wrap footer{width: 1200px; height: 100px;}
+#wrap footer .blogo{width: 300px; height: 100px; float: left; background: #000; color: #fff;}
+#wrap footer .copyright{width: 650px; height: 100px; float: left; text-align: center; line-height: 50px;}
+#wrap footer .sns {
+    width: 250px; height: 120px;
+    float:left;
+}
+
+#wrap footer .sns ul {float:right;}
+#wrap footer .sns ul li{
+    float:left; margin: 30px 0 0 10px;
+}
+#wrap footer .sns ul li img:hover{
+    opacity: 0.5;
+}
